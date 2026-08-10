@@ -1,7 +1,5 @@
 public class Solution {
     public int[] FindErrorNums(int[] nums) {
-        //output repeated , missing number
-        //int intStart = 1;
         int[] ans = new int[2];
         int[] intUsed = new int[nums.Length +1];
 
