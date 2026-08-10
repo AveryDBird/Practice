@@ -3,7 +3,6 @@ public class Solution {
         int[] ans = new int[2];
         int[] intUsed = new int[nums.Length +1];
 
-
         for (int num = 0; num< nums.Length ;num++)
         {
             intUsed[nums[num]]++;
@@ -19,8 +18,6 @@ public class Solution {
                 ans[1] = i;
             }
         }
-        
-
         return ans;
     }
 }
