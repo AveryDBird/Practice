@@ -3,7 +3,5 @@ public class Solution {
     {
         int[] ans = nums.Concat(nums).ToArray();
         return ans;
-
-
     }
 }
