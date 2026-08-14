@@ -1,26 +1,26 @@
 public class Solution {
     public string ReverseVowels(string s) {
         char[] arr = s.ToCharArray();
-        int i = 0;
+        int left = 0;
         int right = s.Length-1;
         string strVowels = "aeiouAEIOU";
-        while(i<right)
+        while(left<right)
         {
-            if(strVowels.Contains(arr[i]) && strVowels.Contains(arr[right]))
+            if(strVowels.Contains(arr[left]) && strVowels.Contains(arr[right]))
             {
-                char temp = arr[i];
-                arr[i] = arr[right];
+                char temp = arr[left];
+                arr[left] = arr[right];
                 arr[right] = temp;
                 right --;
-                i ++;
+                left ++;
             }
-            else if (strVowels.Contains(arr[i]))
+            else if (strVowels.Contains(arr[left]))
             {
                 right--;
             }
             else
             {
-                i ++;
+                left ++;
             }
         }
         return new string(arr);
