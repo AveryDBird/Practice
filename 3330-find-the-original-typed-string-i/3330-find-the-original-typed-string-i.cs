@@ -5,7 +5,6 @@ public class Solution {
         string stated = "";
         foreach (char c in word)
         {
-            //if duplicate add one
             if ( stated.Contains(c))
             {
                 intOutput ++;
