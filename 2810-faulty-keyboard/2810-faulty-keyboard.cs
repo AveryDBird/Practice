@@ -1,6 +1,5 @@
 public class Solution {
     public string FinalString(string s) {
-        char[] charS = s.ToCharArray();
         List<char> charOutput = new List<char>();
         foreach(char c in s)
         {
@@ -10,7 +9,6 @@ public class Solution {
             }
             else
             {
-                //reverse order
                 charOutput.Reverse();
             }
         }
