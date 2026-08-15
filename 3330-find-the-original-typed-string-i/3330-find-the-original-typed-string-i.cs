@@ -2,17 +2,16 @@ public class Solution {
     public int PossibleStringCount(string word) 
     {
         int intOutput = 1;
-        string stated = "";
+        char stated = '\0';
         foreach (char c in word)
         {
-            if ( stated.Contains(c))
+            if ( stated == c)
             {
                 intOutput ++;
             }
             else
             {
-            stated = "";
-            stated += c;  
+            stated = c;  
             }
         }
         return intOutput;
