@@ -1,8 +1,6 @@
 public class Solution {
     public string ReverseOnlyLetters(string s) {
         char[] charS = s.ToCharArray();
-
-        //point 
         int left = 0;
         int right = charS.Length -1;
 
