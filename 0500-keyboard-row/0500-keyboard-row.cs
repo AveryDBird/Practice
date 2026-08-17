@@ -12,11 +12,6 @@ public class Solution {
                 lisOutput.Add(word);
                 break;
             }
-            else
-            {
-                continue;
-            }
-            
         }
       }
       return lisOutput.ToArray();  
