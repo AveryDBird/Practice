@@ -1,5 +1,10 @@
-class Solution:
-    def addBinary(self, a: str, b: str) -> str:
+class Solution(object):
+    def addBinary(self, a, b):
+        """
+        :type a: str
+        :type b: str
+        :rtype: str
+        """
         Output =""
         i = len(a)-1
         j = len(b)-1
